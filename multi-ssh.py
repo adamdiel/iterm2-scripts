@@ -7,7 +7,7 @@ import iterm2
 def generate_cmd_list(cmdList):
     with open('UPDATE-THIS-TO-FILE-LOCATION') as my_file:
         for line in my_file:
-            cmdList.append("ssh " + line)
+            cmdList.append("ssh root@" + line)
     return cmdList
 
 async def main(connection):
